@@ -1,14 +1,6 @@
-//
-//  derivatives.h
-//  finance_analyze
-//
-//  Created by Thorsten Kurth on 17.08.12.
-//
-//
+#include "mathutils.hpp"
 
-#ifndef __finance_analyze__derivatives__
-#define __finance_analyze__derivatives__
+#ifndef DERIVATIVES
+#define DERIVATIVES
 
-#include <iostream>
-
-#endif /* defined(__finance_analyze__derivatives__) */
+#endif

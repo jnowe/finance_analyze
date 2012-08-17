@@ -15,8 +15,8 @@
 		18D820BA15DE503A00ACCECB = {
 			isa = PBXGroup;
 			children = (
-				18D820C715DE50F500ACCECB /* derivatives.cpp */,
 				18D820C815DE50F500ACCECB /* derivatives.h */,
+				18D820C715DE50F500ACCECB /* derivatives.cpp */,
 			);
 			sourceTree = "<group>";
 		};
