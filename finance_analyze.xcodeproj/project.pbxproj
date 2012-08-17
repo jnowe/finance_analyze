@@ -6,10 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		18D820C715DE50F500ACCECB /* derivatives.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = derivatives.cpp; sourceTree = "<group>"; };
+		18D820C815DE50F500ACCECB /* derivatives.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = derivatives.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		18D820BA15DE503A00ACCECB = {
 			isa = PBXGroup;
 			children = (
+				18D820C715DE50F500ACCECB /* derivatives.cpp */,
+				18D820C815DE50F500ACCECB /* derivatives.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -37,12 +44,6 @@
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		18D820C115DE503A00ACCECB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
 		18D820C215DE503A00ACCECB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -55,7 +56,6 @@
 		18D820BF15DE503A00ACCECB /* Build configuration list for PBXProject "finance_analyze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18D820C115DE503A00ACCECB /* Debug */,
 				18D820C215DE503A00ACCECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
