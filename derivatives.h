@@ -6,9 +6,11 @@
 class BlackScholes{
 public:
     BlackScholes(double rr, double ssigma, double TT, double EE, double DD=0.);
-    BlackScholes(double rr, double ssigma, double TT, double EE, std::string oopiontype, double DD=0.);
+    BlackScholes(double rr, double ssigma, double TT, double EE, std::string ppayofftype, double DD=0.);
+    BlackScholes(double rr, double ssigma, double TT, double EEhigh, double EElow, double DD=0.);
+    double Kernel(double S, double Sprime, double t);
     double operator()(double S, double t);
-    double BlackScholes::Calc(double S, double t, int flag=0);
+    double Calc(double S, double t, int flag=0);
     double Value(double S, double t);
     double Delta(double S, double t);
     double Gamma(double S, double t);
@@ -20,15 +22,18 @@ public:
     
 private:
     bool expired;
-    int modelid;
+    int payoffid, kernelid;
     double r; //risk-free rate of return
     double sigma; //volatility
     double T; //maturity-time
     double D; //continuous dividend yield or foreign currency interest rate
     double E; //strike price
+    double Ehigh, Elow; //boundaries for double barrier options
     double d1,d2,tau; //helper values, combination of parameters
-    std::string optiontype; //type of option
-    void set_modelid();
+    double alpha,beta; //parameters used if BS equation is substituted
+    std::string payofftype, kerneltype; //type of option
+    void set_payoffid();
+    void set_kernelid();
     
     //routines for specific options:
     double Eurocall(double S, int flag=0);
